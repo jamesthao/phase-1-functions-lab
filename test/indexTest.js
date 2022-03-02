@@ -52,6 +52,7 @@ describe('index.js', function() {
     });
 
     it('charges 25 dollars for a distance over 2000 feet', function() {
+      console.log(Math.abs(50-58)*264)
       expect(calculatesFarePrice(50, 58)).to.equal(25);
     });
 
